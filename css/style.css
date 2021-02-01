@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+}
+
+body, html {
+    margin: 0;
+    height: 100%;
+}
+/* animações */
+
+@keyframes landing {
+    from {
+        color: rgba(0, 0, 0, 0);
+        top: 50px;
+    }
+    to {
+        color: rgba(0, 0, 0, 1);
+        top: 0;
+    }
+}
+
+/* banner do header */
+.placeholder-img {
+    width: 100%;
+    height: 300px;
+    background-color: rgb(29, 119, 29);
+}
+
+
+/* navbar */
+#navbar {
+    background-color: #2f4e2f;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    z-index: 10;
+}
+
+#navbar ul {
+    display: flex;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+}
+
+#navbar li {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#navbar ul a {
+    width: 100%;
+    padding: 25px;
+/*     padding-bottom: 25px; */
+    /* line-height: 70px; */
+    text-decoration: none;
+    color: hsl(162, 91%, 71%);
+}
+
+#navbar ul a:hover {
+    text-decoration: none;
+    background-color: hsl(125, 10%, 49%);
+    color: rgb(0, 45, 75);
+}
+
+/* efeito parallax */
+
+#container, .caixa1, .caixa2, main, section {
+    height: 100%;
+    width: 100%;
+}
+
+.caixa1, .caixa2 {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    opacity: 0.7;
+}
+
+.caixa1 {
+    background-image: url(../media/pet-image1.jpg);
+
+}
+
+.caixa2 {
+    background-image: url(../media/pet-image2.jpg);
+}
+
+.caixa {
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 13%, rgba(251,255,251,0.6) 29%, rgba(228,255,219,0.6) 44%);
+}
+
+/* estrutura/grid da página */
+
+#container {
+    margin: 0;
+}
+article h2, .text-container, article ul {
+    animation-name: landing;
+    animation-duration: 0.8s;
+    z-index: 9;
+    opacity: 1;
+    height: auto;
+    margin: 0.5%;
+    border-radius: 15px;
+}
+
+.caixa1 .text-container, .caixa2 .text-container  {
+    background-color: hsla(138, 100%, 86%, 0.575);
+}
+
+article h2 {
+    margin-top: 20%;
+    display: inline;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+    height: 100%;
+    text-shadow: #fff 2px 2px;
+}
+
+.text-container {
+    margin-top: 25%;
+    width: 68%;
+    text-align: justify;
+    padding: 50px;
+}
+
+/* footer */
+footer {
+    height: 300px;
+    background-color: rgb(122, 158, 122);
+}
+
+/* responsividade */
+
+@media(max-width: 575px) {
+   
+    #navbar ul {
+        flex-direction: column;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+    }
+
+    article h2, .text-container {
+        width: 100%;
+        margin-left: 20px;
+        padding: 25px;
+    }
+    }
+
+
+/* falta alinhar o h2 à esquerda e o p à direita. talvez colocar position relative de novo...? */
