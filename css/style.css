@@ -116,8 +116,7 @@ article h2, .text-container {
     background-color: hsla(138, 100%, 86%, 0.575);
 }
 
-.caixa1 h2, .caixa2 h2 {
-    margin-top: 20%;
+article h2 {
     display: inline;
     width: 30%;
     text-align: center;
@@ -126,11 +125,18 @@ article h2, .text-container {
     text-shadow: #fff 2px 2px;
 }
 
-.caixa1 .text-container, .caixa2 .text-container {
-    margin-top: 25%;
+.caixa1 h2, .caixa2 h2 {
+    margin-top: 20%;
+}
+
+.text-container {
     width: 68%;
     text-align: justify;
     padding: 50px;
+}
+
+.caixa1 .text-container, .caixa2 .text-container {
+    margin-top: 25%;
 }
 
 /* footer */
