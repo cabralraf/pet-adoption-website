@@ -118,6 +118,8 @@ article h2, .text-container {
 
 article h2 {
     display: inline;
+    font-family: 'Port Lligat Sans', sans-serif;
+    font-size: 48px;
     width: 30%;
     text-align: center;
     padding: 20px;
@@ -130,6 +132,8 @@ article h2 {
 }
 
 .text-container {
+    font-family: 'Cantarell', sans-serif;
+    font-size: 18px;
     width: 68%;
     text-align: justify;
     padding: 50px;
