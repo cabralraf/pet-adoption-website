@@ -95,6 +95,8 @@ body, html {
 .caixa {
     background: rgb(255,255,255);
     background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 13%, rgba(251,255,251,0.6) 29%, rgba(228,255,219,0.6) 44%);
+    padding-top: 20px;
+    box-shadow: 0 0 50px 10px #000;
 }
 
 /* estrutura/grid da página */
