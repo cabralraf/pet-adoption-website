@@ -29,12 +29,42 @@ body, html {
 
 /* navbar */
 #navbar {
+    display: flex;
+    flex-direction: column;
     background-color: #2f4e2f;
     width: 100%;
     margin: 0;
     padding: 0;
     position: fixed;
     z-index: 10;
+}
+
+#upper-navbar {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    justify-content: flex-end;
+}
+
+/* #home-button {
+    margin-left: 20px;
+} */
+
+#login-register {
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+}
+
+#user-recovery {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20%;
+}
+
+#navlinks {
+    width: 100%;
 }
 
 #navbar ul {
@@ -145,6 +175,8 @@ article h2 {
     margin-top: 25%;
 }
 
+
+
 /* footer */
 footer {
     height: 300px;
@@ -155,6 +187,9 @@ footer {
 
 @media(max-width: 575px) {
    
+    #upper-navbar {
+        justify-content: space-between;
+    }
     #navbar ul {
         flex-direction: column;
     }
