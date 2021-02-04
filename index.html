@@ -18,19 +18,32 @@
         <script src="https://kit.fontawesome.com/04105b48e7.js" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Cantarell&family=Port+Lligat+Sans&display=swap" rel="stylesheet">
-        
     </head>
 
     <body>
 
         <nav id="navbar" class="navbar navbar-expand-sm navbar-dark bg-dark">  <!-- barra de navegação sticky (minha marca registrada?) -->
 
+            <div id="upper-navbar">
             <!-- Menu Hamburguer -->
-            <button class="navbar-toggler" data-toggle="collapse" 
-            data-target="#navlinks">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" data-toggle="collapse" 
+                data-target="#navlinks">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
+<!--                 <i class="fas fa-paw text-success" id="home-button" style="font-size: 36px;"></i> -->
+                <div id="login-register">
+                    <form action="post">
+                        <input type="text" name="user-name" id="user-name" placeholder="Usuário">
+                        <input type="password" name="user-password" id="user-password" placeholder="Senha">
+                        <input type="button" value="Login">
+                    </form>
+                    <div id="user-recovery">
+                        <a href="">Esqueceu a senha?</a>
+                        <a href="">Cadastre-se</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="collapse navbar-collapse" id="navlinks">
                 <ul>
@@ -53,7 +66,7 @@
                         <article  class="col-lg-8 offset-lg-2 row" class="caixa1">
 
                             <h2 class="content">Encontre pets, lar temporário e lar permanente</h2>
-                            <div class="text-container"><p class="content">Nesse website, quer você esteja procurando um pet ou um lar para algum pet que você possa ter resgatado, podemos te ajudar - aqui você poderá encontrar animaizinhos, adotantes e lar temporário! Sinta-se à vontade para explorar os recursos do website.</p></div>
+                            <div class="text-container"><p class="content">Nesse website, quer você esteja procurando um pet ou um lar para algum pet que você possa ter resgatado, podemos te ajudar - aqui você poderá encontrar animaizinhos, adotantes e lar temporário! Você pode buscar pets disponíveis para adoção ou candidatos a lar temporário, ou ainda cadastrar pets que você tenha à procura de um novo lar ou candidatar-se para lar temporário. Sinta-se à vontade para explorar os recursos do website.</p></div>
                         </article>
                     </div>
 
@@ -86,7 +99,7 @@
 
 
 
-        <!-- links JS -->
+        <!-- links script JS -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
